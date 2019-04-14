@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:stv="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        app:layout_heightPercent="91%">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--天气和打卡/>-->
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal">
+
+                <com.allen.library.SuperTextView
+                    android:id="@+id/home_stv_weather"
+                    android:layout_height="match_parent"
+                    app:layout_widthPercent="40%" />
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_widthPercent="60%">
+
+                    <com.allen.library.SuperTextView
+                        android:id="@+id/home_stv_date"
+                        android:layout_width="match_parent"
+                        app:layout_heightPercent="50%"
+                        app:sCenterTextGravity="center"
+                        app:sCenterTextSize="20dp"
+                        app:sCenterTextString="2019年3月17日"
+                        app:sUseRipple="false"
+                        android:background="#FFFFFF"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <com.allen.library.SuperTextView
+                            android:id="@+id/home_stv_success"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.3"
+                            app:sLeftTextString="今日打卡："
+                            app:sRightTextString="成功"
+                            app:sLeftTextSize="17dp"
+                            app:sRightTextSize="17dp"/>
+                        <com.allen.library.SuperTextView
+                            android:id="@+id/home_stv_sum"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:sLeftTextString="累计："
+                            app:sRightTextString="42次"
+                            app:sLeftTextSize="17dp"
+                            app:sRightTextSize="17dp"/>
+                    </LinearLayout>
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <!--课程表/>-->
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <com.allen.library.SuperTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:sLeftTextString="今日课程"
+                    android:layout_weight="5"
+                    app:sUseRipple="false"
+                    android:background="#FFFFFF"
+                    />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="vertical">
+                <com.allen.library.SuperTextView
+                    android:id="@+id/home_stv_todaycourse1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:sLeftTextString="1~2"
+                    app:sLeftTextSize="20dp"
+                    app:sLeftViewGravity="left_center"
+                    app:sCenterTextString="中国近代史纲要"
+                    app:sCenterTextSize="20dp"
+                    app:sRightTextString="YFJ202"
+                    app:sRightTextSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+                <com.allen.library.SuperTextView
+                    android:id="@+id/home_stv_todaycourse2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:sLeftTextString="1~2"
+                    app:sLeftTextSize="20dp"
+                    app:sLeftViewGravity="left_center"
+                    app:sCenterTextString="计算机组成原理"
+                    app:sCenterTextSize="20dp"
+                    app:sRightTextString="YF402"
+                    app:sRightTextSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <!--小工具集合/>-->
+            <com.allen.library.SuperTextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                app:sLeftIconHeight="50dp"
+                app:sLeftIconWidth="50dp"
+                app:sLeftTextString="淮阴工学院"
+                app:sLeftIconRes="@drawable/home_school"
+                app:sUseRipple="false"
+                android:background="#FFFFFF"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>
